@@ -81,7 +81,7 @@ confusion.matrix[2,2] <- tp
 correct <- tp +tn
 false <- fp + fn
 
-correct/268
-false/268
+correct/sum(tn, tp, fp, fn)
+false/sum(tn, tp, fp, fn)
 
 "Our model is right 80% of the time. It's quiet good i think."
